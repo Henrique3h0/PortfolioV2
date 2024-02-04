@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 
     <meta name="description" content="Portofolio de lima">
@@ -15,6 +16,27 @@
 
 
     <style>
+/* Estilos para os botões de próximo e anterior do Slick Carousel */
+.slick-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slick-prev,
+.slick-next {
+    background-color: #4a5568;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: #2d3748;
+}
 
         .fade-in {
             opacity: 0;
@@ -118,6 +140,22 @@
         .border-gradient:hover::before {
             opacity: 1;
         }
+
+        #project-popup .overflow-auto {
+            max-height: 80vh; /* Ajuste conforme necessário */
+        }
+        #project-popup {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        #project-popup.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+
     </style>
 
 
@@ -144,6 +182,7 @@
                 <a href="#about-me" class="btn-link">Sobre mim</a>
                 <a href="#technologies" class="btn-link">Tecnologias favoritas</a>
                 <a href="#github-stats" class="btn-link">Estatísticas</a>
+                <a href="#main-projects" class="btn-link">Projetos</a>
                 <a href="#social-media" class="btn-link">Minhas Redes</a>
             </div>
 
@@ -203,18 +242,44 @@
     </div>
 </section>
 
+    <!-- Seção de Projetos Principais -->
+<section id="main-projects" class="py-16 text-white fade-in shadow-card">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8">Principais Projetos</h2>
+        <!-- Conteúdo dos principais projetos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">AUTO DRAWN</h3>
+                <p class="text-lg">Sistema de visão computacional para identificar todos contornos do principal objeto ou ser em uma imagem, e assim desenha-lo ponto por ponto</p>
+                <button class="btn-link mt-4" onclick="openProjectPopup('autodrawn')">Saiba mais</button>
+            </div>
 
-<!-- GitHub Stats Section -->
-<section id="github-stats" class="py-16 fade-in shadow-card">
-    <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <a href="https://github.com/Henrique3h0">
-            <img class="mb-4 w-full" src="https://github-readme-stats.vercel.app/api?username=Henrique3h0&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&locale=pt-br" alt="GitHub Stats"/>
-        </a>
-        <a href="https://github.com/Henrique3h0">
-            <img class="mb-4 w-full" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Henrique3h0&layout=compact&langs_count=7&theme=dracula&locale=pt-br" alt="Top Languages"/>
-        </a>
+            <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">HABBO TRACKER</h3>
+                <p class="text-lg">Essa aplicação é capaz de rastrear toda atividade de um usuario no habbo hotel global, coisas como seus pontos, tempo online, mudanças no personagem, etc...</p>
+                <button class="btn-link mt-4" onclick="openProjectPopup('habbotracker')">Por que fiz isso?</button>
+            </div>
+        </div>
     </div>
 </section>
+<!-- Popup de Projeto -->
+
+<div id="project-popup" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center z-50">
+    <div class="bg-gray-800 p-6 rounded-lg max-w-lg w-full overflow-hidden">
+        <div class="overflow-auto">
+            <h2 id="project-title" class="text-2xl font-bold mb-4"></h2>
+            <p id="project-description" class="mb-4"></p>
+            <div id="project-carousel" class="carousel">
+
+            </div>
+        </div>
+        <button id="close-popup" class="btn-link mt-4" onclick="closeProjectPopup()">Fechar</button>
+    </div>
+</div>
+
+
+
+
 
 
 
@@ -237,10 +302,26 @@
         </div>
     </section>
 
+    <!-- GitHub Stats Section -->
+<section id="github-stats" class="py-16 fade-in shadow-card">
+    <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <a href="https://github.com/Henrique3h0">
+            <img class="mb-4 w-full" src="https://github-readme-stats.vercel.app/api?username=Henrique3h0&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&locale=pt-br" alt="GitHub Stats"/>
+        </a>
+        <a href="https://github.com/Henrique3h0">
+            <img class="mb-4 w-full" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Henrique3h0&layout=compact&langs_count=7&theme=dracula&locale=pt-br" alt="Top Languages"/>
+        </a>
+    </div>
+</section>
+
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-white text-center py-4 fade-in shadow-card">
         <p>&copy; 2024 LIMA. Todos os direitos reservados.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
 
@@ -295,6 +376,90 @@
         window.onload = function () {
             type();
         };
+
+        function openProjectPopup(projectName) {
+            // Definir título e descrição do projeto
+            var title;
+            var description;
+            if (projectName === 'autodrawn') {
+                title = "AUTO DRAWN";
+                description = "Ele pode ser usado em diversos casos, como desenhar a forma em que uma máquina pode ver certa imagem, ser o melhor no Gartic. Basicamente ele usa o cursor para desenhar cada ponto de contorno da imagem.";
+                // Adicionar conteúdo ao carrossel
+                var carouselContainer = document.getElementById('project-carousel');
+                carouselContainer.innerHTML = '';
+                var media = [
+                    { type: 'video', src: 'images/AutoDrawn/preview.webm' }
+                ];
+                media.forEach(function(item) {
+                    if (item.type === 'image') {
+                        var img = document.createElement('img');
+                        img.src = item.src;
+                        carouselContainer.appendChild(img);
+                    } else if (item.type === 'video') {
+                        var video = document.createElement('video');
+                        video.src = item.src;
+                        video.controls = true;
+                        carouselContainer.appendChild(video);
+                    }
+                });
+            }
+
+            if (projectName === 'habbotracker') {
+                title = "HABBO TRACKER";
+                description = "Como desenvolvedor BackEnd, sempre fui extremamente fascinado por informação, tipo, como isso funciona? Por que funciona? Como fazem? o que comem? hehe, piadas a parte, o HABBO TRACKER foi desenvolvido para lidar com os HABBO SCAMMER, uma classe de usuarios que aplicava golpes em diversos usuarios, fingindo ser alguma autoridade admnistrativa ou um bem sucedio e filantropo HOTEL MAKER, com isso podemos rastrear toda atividade desses individuos para desmacara-los e melhorar a comunidade.";
+                // Adicionar conteúdo ao carrossel
+                var carouselContainer = document.getElementById('project-carousel');
+                carouselContainer.innerHTML = '';
+                var media = [
+                    { type: 'video', src: 'images/HabboTracker/preview.webm' }
+                ];
+                media.forEach(function(item) {
+                    if (item.type === 'image') {
+                        var img = document.createElement('img');
+                        img.src = item.src;
+                        carouselContainer.appendChild(img);
+                    } else if (item.type === 'video') {
+                        var video = document.createElement('video');
+                        video.src = item.src;
+                        video.controls = true;
+                        carouselContainer.appendChild(video);
+                    }
+                });
+            }
+            // Definir o título e a descrição no popup
+            document.getElementById('project-title').innerText = title;
+            document.getElementById('project-description').innerText = description;
+            // Exibir o popup
+            document.getElementById('project-popup').classList.remove('hidden');
+            // Inicializar o carrossel de imagens e vídeos usando a biblioteca Slick Carousel
+            $('.carousel').slick({
+                prevArrow: '<button class="slick-prev">Anterior</button>',
+                nextArrow: '<button class="slick-next">Próximo</button>'
+            });
+            document.getElementById('project-popup').classList.add('active');
+        }
+
+
+
+        function closeProjectPopup() {
+            // Ocultar o popup
+            $('.carousel').slick('unslick');
+            document.getElementById('project-popup').classList.add('hidden');
+        }
+
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(event) {
+                event.preventDefault();
+
+                var targetId = $(this).attr('href');
+                var targetOffsetTop = $(targetId).offset().top;
+                var duration = 2000; // Duração da animação em milissegundos
+
+                $('html, body').animate({
+                    scrollTop: targetOffsetTop
+                }, duration);
+            });
+        });
     </script>
 
 </body>
