@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
 
-    <meta name="description" content="Portofolio de lima">
-    <meta name="keywords" content="Alguma coisa">
+    <meta name="description" content="Portofolio do Desenvolvedor lima">
+    <meta name="keywords" content="Desenvolvedor, Programador">
     <meta name="author" content="LIMA">
 
 
@@ -155,6 +155,20 @@
             visibility: visible;
         }
 
+        #project-popup img:active {
+            max-width: none; /* Removendo a limitação de largura */
+            transform: scale(2); /* Aplicando o efeito de zoom */
+        }
+
+        .carousel .slick-prev,
+.carousel .slick-next {
+    width: 100%;
+}
+    .social-icons{
+        justify-content: space-evenly;
+    }
+
+
 
     </style>
 
@@ -180,9 +194,10 @@
             <p class="text-lg mb-6">Desenvolvedor BackEnd Experiente, Brincando com FrontEnd</p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="#about-me" class="btn-link">Sobre mim</a>
-                <a href="#technologies" class="btn-link">Tecnologias favoritas</a>
+                <a href="#technologies" class="btn-link">Tecnologias com Experiencia</a>
                 <a href="#github-stats" class="btn-link">Estatísticas</a>
                 <a href="#main-projects" class="btn-link">Projetos</a>
+                <a href="#social-media" class="btn-link">Contatos</a>
                 <a href="#social-media" class="btn-link">Minhas Redes</a>
             </div>
 
@@ -197,7 +212,7 @@
         <div class="flex flex-col md:flex-row items-center md:items-start">
             <div class="md:w-1/2 mb-4 md:mb-0 relative overflow-hidden">
                 <div class="rounded-lg shadow-lg hover-scale border-gradient mx-auto md:mx-0">
-                    <img src="images/me-draw.png" alt="LIMA" class="rounded-lg hover-scale">
+                    <img src="images/logo.png" alt="LIMA" class="rounded-lg hover-scale">
                 </div>
             </div>
             <div class="md:w-1/2">
@@ -255,9 +270,30 @@
             </div>
 
             <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
-                <h3 class="text-xl font-bold mb-2">HABBO TRACKER</h3>
-                <p class="text-lg">Essa aplicação é capaz de rastrear toda atividade de um usuario no habbo hotel global, coisas como seus pontos, tempo online, mudanças no personagem, etc...</p>
-                <button class="btn-link mt-4" onclick="openProjectPopup('habbotracker')">Por que fiz isso?</button>
+                <h3 class="text-xl font-bold mb-2">L.A.R.I</h3>
+                <p class="text-lg">Uma assistente virtual construida fortemente inspirada no ficticio JARVIS, o super assistente virtual do personagem da marvel homen de ferro.</p>
+                <button class="btn-link mt-4" onclick="openProjectPopup('lari')">Saiba mais</button>
+            </div>
+
+            <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">VSTARS</h3>
+                <p class="text-lg">Uma empresa simulada, criado em um treinamento que fiz de gestão empresarial, porem o projeto que quero mostrar aqui é uma aplicação de FOOD PAGE com tudo que um restaurante precisaria em seu proprio APP</p>
+                <button class="btn-link mt-4" onclick="openProjectPopup('vstars')">Saiba mais</button>
+            </div>
+            <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">BAÚ DOS PIRATAS</h3>
+                <p class="text-lg">Isso faz parte de um projeto pessoal, de modernizar aplicações antigas, e ver como elas ficaram hoje em dia, escolhe sempre as maiores aplicações da internet, e uma delas foi o ThePirateBay</p>
+                <button class="btn-link mt-4" onclick="openProjectPopup('tpb2')">Saiba mais</button>
+            </div>
+            <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">LIMA STORE</h3>
+                <p class="text-lg">Bom, é basicamente a minha loja pessoal, porem... ela tem um toque especial, alem de ser bem organizada, e ser feita por min (brincadeira) hehe, o especial dela é sua Inteligencia Artificial</p>
+                <button class="btn-link mt-4" onclick="openProjectPopup('limastore')">Saiba mais</button>
+            </div>
+            <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-2">E.A.S.Y. (Effortless All-in-One Payment System)</h3>
+                <p class="text-lg">Conheça o E.A.S.Y. - o Sistema de Pagamento Tudo-em-Um que é mais simples do que fazer pipoca no micro-ondas! Integre qualquer forma de pagamento com facilidade e rapidez seja ela de moedas normais ou stable/crypto moedas. Adeus, complicação! Bem-vindo, facilidade!</p>
+                <button class="btn-link mt-4" onclick="openProjectPopup('e.a.s.y')">Saiba mais</button>
             </div>
         </div>
     </div>
@@ -278,29 +314,33 @@
 </div>
 
 
-
-
-
-
-
-
-
-    <!-- Social Media Section -->
-    <section id="social-media" class="py-16 bg-gradient-to-r from-purple-600 to-blue-500 text-white fade-in shadow-card">
+<!-- Social Media Section -->
+<section id="social-media" class="py-16 bg-gradient-to-r from-purple-600 to-blue-500 text-white fade-in shadow-card">
     <div class="container mx-auto">
         <h2 class="text-3xl font-bold mb-8">Conecte-se comigo</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <a href="https://github.com/Henrique3h0" class="flex items-center justify-center flex-col hover-scale shadow-hover">
-                    <i class="fab fa-github text-4xl mb-2"></i>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.instagram.com/000_kaua000/" class="flex items-center justify-center flex-col hover-scale shadow-hover">
-                    <i class="fab fa-instagram text-4xl mb-2"></i>
-                    <span>Instagram</span>
-                </a>
-            </div>
+        <div class="social-icons grid grid-cols-2 md:grid-cols-4 gap-8">
+            <a href="https://github.com/Henrique3h0" class="flex items-center justify-center flex-col hover-scale shadow-hover">
+                <i class="fab fa-github text-4xl mb-2"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.instagram.com/000_kaua000/" class="flex items-center justify-center flex-col hover-scale shadow-hover">
+                <i class="fab fa-instagram text-4xl mb-2"></i>
+                <span>Instagram</span>
+            </a>
+            <a href="/" class="flex items-center justify-center flex-col hover-scale shadow-hover">
+                <i class="fab fa-whatsapp text-4xl mb-2"></i>
+                <span>WhatsApp</span>
+            </a>
+            <a href="/" class="flex items-center justify-center flex-col hover-scale shadow-hover">
+                <i class="fab fa-linkedin text-4xl mb-2"></i>
+                <span>LinkeDin</span>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
+
+
+
 
     <!-- GitHub Stats Section -->
 <section id="github-stats" class="py-16 fade-in shadow-card">
@@ -404,15 +444,116 @@
                 });
             }
 
-            if (projectName === 'habbotracker') {
-                title = "HABBO TRACKER";
-                description = "Como desenvolvedor BackEnd, sempre fui extremamente fascinado por informação, tipo, como isso funciona? Por que funciona? Como fazem? o que comem? hehe, piadas a parte, o HABBO TRACKER foi desenvolvido para lidar com os HABBO SCAMMER, uma classe de usuarios que aplicava golpes em diversos usuarios, fingindo ser alguma autoridade admnistrativa ou um bem sucedio e filantropo HOTEL MAKER, com isso podemos rastrear toda atividade desses individuos para desmacara-los e melhorar a comunidade.";
+            if (projectName === 'lari') {
+                title = "Lima Artificial Retarded Inteligence";
+                description = "A LARI demonstra capacidade para desempenhar uma variedade de tarefas úteis, incluindo a reprodução de séries de forma aleatória, o envio de mensagens para contatos específicos no WhatsApp, a obtenção de resumos sobre diversos assuntos, a realização de pesquisas em plataformas como YouTube, Wikipedia, Google, entre outras funcionalidades... No momento, a LARI é capaz de reconhecer mais de 30 comandos por voz!";
                 // Adicionar conteúdo ao carrossel
                 var carouselContainer = document.getElementById('project-carousel');
                 carouselContainer.innerHTML = '';
                 var media = [
-                    { type: 'video', src: 'images/HabboTracker/preview.webm' }
+                    { type: 'image', src: 'images/noimage.jpeg' }
                 ];
+                media.forEach(function(item) {
+                    if (item.type === 'image') {
+                        var img = document.createElement('img');
+                        img.src = item.src;
+                        carouselContainer.appendChild(img);
+                    } else if (item.type === 'video') {
+                        var video = document.createElement('video');
+                        video.src = item.src;
+                        video.controls = true;
+                        carouselContainer.appendChild(video);
+                    }
+                });
+            }
+
+            if (projectName === 'vstars') {
+                title = "V STARS";
+                description = "V = 5 | STARS = estrelas | Logo, somos 5 estrelas, V STARS hehe, bom esse é um APP/WEB que criei para a empresa simulada, no fim não serviu pra nada, mas bom... está feito hehe.";
+                // Adicionar conteúdo ao carrossel
+                var carouselContainer = document.getElementById('project-carousel');
+                carouselContainer.innerHTML = '';
+                var media = [
+                    { type: 'video', src: 'images/VSTARS/preview.mp4' },
+                    { type: 'image', src: 'images/VSTARS/1.png'},
+                    { type: 'image', src: 'images/VSTARS/2.png'},
+                    { type: 'image', src: 'images/VSTARS/3.png'},
+                    { type: 'image', src: 'images/VSTARS/4.png'},
+                    { type: 'image', src: 'images/VSTARS/5.png'},
+                    { type: 'image', src: 'images/VSTARS/6.png'}
+                ];
+                media.forEach(function(item) {
+                    if (item.type === 'image') {
+                        var img = document.createElement('img');
+                        img.src = item.src;
+                        carouselContainer.appendChild(img);
+                    } else if (item.type === 'video') {
+                        var video = document.createElement('video');
+                        video.src = item.src;
+                        video.controls = true;
+                        carouselContainer.appendChild(video);
+                    }
+                });
+            }
+
+            if (projectName === 'tpb2') {
+                title = "BAÚ DOS PIRATAS";
+                description = "Bom pra quem não sabe, o ThePirateBay foi e ainda é um site que seu unico intuito é o compartilhamento de arquivos pirateados, mas por que ele é tão importante? Simples, sem ele muitos jogos, filmes, e semelhantes deixariam de existir da historia, sobrando apenas em lembranças, isso é só um projeto artistico e mesmo que seja complementa funcional, e contenha diversos arquivos piratas, ele não está online e mesmo em operação ele não tem os arquivos no servidor, apenas indexados por um wrapper. è apenas um projeto com intuito nostalgico e artistico";
+                // Adicionar conteúdo ao carrossel
+                var carouselContainer = document.getElementById('project-carousel');
+                carouselContainer.innerHTML = '';
+                var media = [
+                    { type: 'video', src: 'images/ThePirateBay2/ThePirateBay2.mp4' },
+                    { type: 'image', src: 'images/ThePirateBay2/1.png'},
+                ];
+                media.forEach(function(item) {
+                    if (item.type === 'image') {
+                        var img = document.createElement('img');
+                        img.src = item.src;
+                        carouselContainer.appendChild(img);
+                    } else if (item.type === 'video') {
+                        var video = document.createElement('video');
+                        video.src = item.src;
+                        video.controls = true;
+                        carouselContainer.appendChild(video);
+                    }
+                });
+            }
+
+            if (projectName === 'limastore') {
+                title = "LIMA STORE";
+                description = "Como um bom mamifero desprovido de sono, e com curiosas capacidades de converter cafeína em soluções de bugs (Programador), Prefiro evitar o maximo possivel de contato com os queridos usuarios (Irmãos entenderam o porquê), Criei o jorge. Jorge é um inteligencia artificial baseado na LARI (Gosto de falar que é o marido dela hehe), e sua unica função é receber uma descrição dada pelo cliente, e baseado nos parametros em que ele foi treinado, dar um relatorio e precificação que eu normalmente daria, assim todos cliente que quiser meus serviços personalizados, terão uma resposta instatânea em qualquer momento do dia, e em qualquer dia (Ainda bem que IA não tem direito trabalhista) ";
+                // Adicionar conteúdo ao carrossel
+                var carouselContainer = document.getElementById('project-carousel');
+                carouselContainer.innerHTML = '';
+                var media = [
+                    { type: 'image', src: 'images/noimage.jpeg'}
+                ];
+                media.forEach(function(item) {
+                    if (item.type === 'image') {
+                        var img = document.createElement('img');
+                        img.src = item.src;
+                        carouselContainer.appendChild(img);
+                    } else if (item.type === 'video') {
+                        var video = document.createElement('video');
+                        video.src = item.src;
+                        video.controls = true;
+                        carouselContainer.appendChild(video);
+                    }
+                });
+            }
+
+            if (projectName === 'e.a.s.y') {
+                title = "E.A.S.Y. (Effortless All-in-One Payment System)";
+                description = "AInda não tem imagens e videos desse projeto mas em breve vou adiciona-los, mas basicamente, é um sistema/painel que por ele, você pode aceitar diversas formas de pagamento, seja ela Centralizada com moedas normais, ou Descentralizadas como crypto e stable coins, mesmo sem sabe programar e dispensando maquininhas";
+                // Adicionar conteúdo ao carrossel
+                var carouselContainer = document.getElementById('project-carousel');
+                carouselContainer.innerHTML = '';
+
+                var media = [
+                    { type: 'image', src: 'images/noimage.jpeg'}
+                ];
+
                 media.forEach(function(item) {
                     if (item.type === 'image') {
                         var img = document.createElement('img');
@@ -433,9 +574,12 @@
             document.getElementById('project-popup').classList.remove('hidden');
             // Inicializar o carrossel de imagens e vídeos usando a biblioteca Slick Carousel
             $('.carousel').slick({
-                prevArrow: '<button class="slick-prev">Anterior</button>',
-                nextArrow: '<button class="slick-next">Próximo</button>'
+                nextArrow: '<button class="slick-next" aria-label="Próxima Imagem" title="Próxima Imagem">➡️PROXIMO➡️</button>',
+                prevArrow: '<button class="slick-prev" aria-label="Imagem anterior" title="Imagem anterior">⬅️ANTERIOR⬅️</button>',
+                adaptiveHeight: true,
+
             });
+
             document.getElementById('project-popup').classList.add('active');
         }
 
