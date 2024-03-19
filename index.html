@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 
     <meta name="description" content="Portofolio do Desenvolvedor lima">
@@ -16,27 +16,27 @@
 
 
     <style>
-/* Estilos para os botões de próximo e anterior do Slick Carousel */
-.slick-controls {
-    text-align: center;
-    margin-top: 20px;
-}
+        /* Estilos para os botões de próximo e anterior do Slick Carousel */
+        .slick-controls {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-.slick-prev,
-.slick-next {
-    background-color: #4a5568;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+        .slick-prev,
+        .slick-next {
+            background-color: #4a5568;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-.slick-prev:hover,
-.slick-next:hover {
-    background-color: #2d3748;
-}
+        .slick-prev:hover,
+        .slick-next:hover {
+            background-color: #2d3748;
+        }
 
         .fade-in {
             opacity: 0;
@@ -142,8 +142,10 @@
         }
 
         #project-popup .overflow-auto {
-            max-height: 80vh; /* Ajuste conforme necessário */
+            max-height: 80vh;
+            /* Ajuste conforme necessário */
         }
+
         #project-popup {
             transition: opacity 0.3s ease, visibility 0.3s ease;
             opacity: 0;
@@ -155,21 +157,12 @@
             visibility: visible;
         }
 
-        #project-popup img:active {
-            max-width: none; /* Removendo a limitação de largura */
-            transform: scale(2); /* Aplicando o efeito de zoom */
-        }
+
 
         .carousel .slick-prev,
-.carousel .slick-next {
-    width: 100%;
-}
-    .social-icons{
-        justify-content: space-evenly;
-    }
-
-
-
+        .carousel .slick-next {
+            width: 100%;
+        }
     </style>
 
 
@@ -186,7 +179,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="hero-section" class="bg-gradient-to-r from-blue-500 to-purple-600 text-center py-20 fade-in shadow-card parallax">
+    <header id="hero-section"
+        class="bg-gradient-to-r from-blue-500 to-purple-600 text-center py-20 fade-in shadow-card parallax">
         <div class="container mx-auto">
             <div id="typing-container">
                 <h1 id="typing-text" class="text-4xl font-bold mb-4"></h1>
@@ -206,166 +200,196 @@
 
 
     <!-- About Me Section -->
-<section id="about-me" class="py-16 fade-in shadow-card">
-    <div class="container mx-auto">
-        <h2 class="text-4xl font-bold mb-8">Sobre Mim</h2>
-        <div class="flex flex-col md:flex-row items-center md:items-start">
-            <div class="md:w-1/2 mb-4 md:mb-0 relative overflow-hidden">
-                <div class="rounded-lg shadow-lg hover-scale border-gradient mx-auto md:mx-0">
-                    <img src="images/logo.png" alt="LIMA" class="rounded-lg hover-scale">
+    <section id="about-me" class="py-16 fade-in shadow-card">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-8">Sobre Mim</h2>
+            <div class="flex flex-col md:flex-row items-center md:items-start">
+                <div class="md:w-1/2 mb-4 md:mb-0 relative overflow-hidden">
+                    <div class="rounded-lg shadow-lg hover-scale border-gradient mx-auto md:mx-0">
+                        <img src="/images/logo.png" alt="LIMA" class="rounded-lg hover-scale">
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <p class="mb-4 text-lg">
+                        Olá! Eu sou <strong>Kauã Lima</strong>, um entusiasta desenvolvedor backend que, ocasionalmente,
+                        se aventura no mundo do frontend por diversão.
+                    </p>
+                    <p class="mb-4 text-lg">
+                        Minha jornada no desenvolvimento de software é marcada por uma vasta experiência na criação de
+                        sistemas eficientes para automatização de tarefas repetitivas, bem como soluções robustas para
+                        gestão de vendas e processamento de pagamentos.
+                    </p>
+                    <p class="text-lg">
+                        Minha abordagem é impulsionada pela combinação de habilidades técnicas sólidas e uma paixão pela
+                        resolução de problemas. Com um histórico em sistemas de automação e expertise em backend, busco
+                        criar soluções web intuitivas e atraentes que unam a eficiência funcional com uma experiência de
+                        usuário envolvente.
+                    </p>
                 </div>
             </div>
-            <div class="md:w-1/2">
-                <p class="mb-4 text-lg">
-                    Olá! Eu sou <strong>Kauã Lima</strong>, um entusiasta desenvolvedor backend que, ocasionalmente, se aventura no mundo do frontend por diversão.
-                </p>
-                <p class="mb-4 text-lg">
-                    Minha jornada no desenvolvimento de software é marcada por uma vasta experiência na criação de sistemas eficientes para automatização de tarefas repetitivas, bem como soluções robustas para gestão de vendas e processamento de pagamentos.
-                </p>
-                <p class="text-lg">
-                    Minha abordagem é impulsionada pela combinação de habilidades técnicas sólidas e uma paixão pela resolução de problemas. Com um histórico em sistemas de automação e expertise em backend, busco criar soluções web intuitivas e atraentes que unam a eficiência funcional com uma experiência de usuário envolvente.
-                </p>
-            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
     <!-- Technologies Section-->
-<section id="technologies" class="py-16 bg-gradient-to-r from-purple-600 to-blue-500 text-white fade-in shadow-card">
-    <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8">Minhas Favoritas</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div class="flex items-center hover-scale hover-bg-purple-700 hover-border-purple-300 transition-all duration-300 ease-in-out">
-                <i class="devicon-python-plain text-4xl mr-2"></i>
-                <a href="https://www.python.org/">Python</a>
-            </div>
-            <div class="flex items-center hover-scale hover-bg-purple-700 hover-border-purple-300 transition-all duration-300 ease-in-out">
-                <i class="devicon-php-plain text-4xl mr-2"></i>
-                <a href="https://www.php.net/">PHP</a>
-            </div>
-            <div class="flex items-center hover-scale hover-bg-purple-700 hover-border-purple-300 transition-all duration-300 ease-in-out">
-                <i class="devicon-javascript-plain text-4xl mr-2"></i>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">JavaScript</a>
-            </div>
-            <div class="flex items-center hover-scale hover-bg-purple-700 hover-border-purple-300 transition-all duration-300 ease-in-out">
-                <i class="devicon-lua-plain text-4xl mr-2"></i>
-                <a href="https://www.lua.org/">Lua</a>
+    <section id="technologies"
+        class="py-16 bg-gradient-to-r from-purple-600 to-blue-500 text-white fade-in shadow-card">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Minhas Favoritas</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div
+                    class="flex items-center hover-scale hover-bg-purple-700 hover-border-purple-300 transition-all duration-300 ease-in-out">
+                    <i class="devicon-python-plain text-4xl mr-2"></i>
+                    <a href="https://www.python.org/">Python</a>
+                </div>
+                <div
+                    class="flex items-center hover-scale hover-bg-purple-700 hover-border-purple-300 transition-all duration-300 ease-in-out">
+                    <i class="devicon-php-plain text-4xl mr-2"></i>
+                    <a href="https://www.php.net/">PHP</a>
+                </div>
+                <div
+                    class="flex items-center hover-scale hover-bg-purple-700 hover-border-purple-300 transition-all duration-300 ease-in-out">
+                    <i class="devicon-javascript-plain text-4xl mr-2"></i>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/javascript">JavaScript</a>
+                </div>
+                <div
+                    class="flex items-center hover-scale hover-bg-purple-700 hover-border-purple-300 transition-all duration-300 ease-in-out">
+                    <i class="devicon-lua-plain text-4xl mr-2"></i>
+                    <a href="https://www.lua.org/">Lua</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Seção de Projetos Principais -->
-<section id="main-projects" class="py-16 text-white fade-in shadow-card">
-    <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8">Principais Projetos</h2>
-        <!-- Conteúdo dos principais projetos -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
-                <h3 class="text-xl font-bold mb-2">AUTO DRAWN</h3>
-                <p class="text-lg">Sistema de visão computacional para identificar todos contornos do principal objeto ou ser em uma imagem, e assim desenha-lo ponto por ponto</p>
-                <button class="btn-link mt-4" onclick="openProjectPopup('autodrawn')">Saiba mais</button>
-            </div>
+    <section id="main-projects" class="py-16 text-white fade-in shadow-card">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Principais Projetos</h2>
+            <!-- Conteúdo dos principais projetos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">AUTO DRAWN</h3>
+                    <p class="text-lg">Sistema de visão computacional para identificar todos contornos do principal
+                        objeto ou ser em uma imagem, e assim desenha-lo ponto por ponto</p>
+                    <button class="btn-link mt-4" onclick="openProjectPopup('autodrawn')">Saiba mais</button>
+                </div>
 
-            <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
-                <h3 class="text-xl font-bold mb-2">L.A.R.I</h3>
-                <p class="text-lg">Uma assistente virtual construida fortemente inspirada no ficticio JARVIS, o super assistente virtual do personagem da marvel homen de ferro.</p>
-                <button class="btn-link mt-4" onclick="openProjectPopup('lari')">Saiba mais</button>
-            </div>
+                <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">L.A.R.I</h3>
+                    <p class="text-lg">Uma assistente virtual construida fortemente inspirada no ficticio JARVIS, o
+                        super assistente virtual do personagem da marvel homen de ferro.</p>
+                    <button class="btn-link mt-4" onclick="openProjectPopup('lari')">Saiba mais</button>
+                </div>
 
-            <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
-                <h3 class="text-xl font-bold mb-2">VSTARS</h3>
-                <p class="text-lg">Uma empresa simulada, criado em um treinamento que fiz de gestão empresarial, porem o projeto que quero mostrar aqui é uma aplicação de FOOD PAGE com tudo que um restaurante precisaria em seu proprio APP</p>
-                <button class="btn-link mt-4" onclick="openProjectPopup('vstars')">Saiba mais</button>
-            </div>
-            <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
-                <h3 class="text-xl font-bold mb-2">BAÚ DOS PIRATAS</h3>
-                <p class="text-lg">Isso faz parte de um projeto pessoal, de modernizar aplicações antigas, e ver como elas ficaram hoje em dia, escolhe sempre as maiores aplicações da internet, e uma delas foi o ThePirateBay</p>
-                <button class="btn-link mt-4" onclick="openProjectPopup('tpb2')">Saiba mais</button>
-            </div>
-            <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
-                <h3 class="text-xl font-bold mb-2">LIMA STORE</h3>
-                <p class="text-lg">Bom, é basicamente a minha loja pessoal, porem... ela tem um toque especial, alem de ser bem organizada, e ser feita por min (brincadeira) hehe, o especial dela é sua Inteligencia Artificial</p>
-                <button class="btn-link mt-4" onclick="openProjectPopup('limastore')">Saiba mais</button>
-            </div>
-            <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
-                <h3 class="text-xl font-bold mb-2">E.A.S.Y. (Effortless All-in-One Payment System)</h3>
-                <p class="text-lg">Conheça o E.A.S.Y. - o Sistema de Pagamento Tudo-em-Um que é mais simples do que fazer pipoca no micro-ondas! Integre qualquer forma de pagamento com facilidade e rapidez seja ela de moedas normais ou stable/crypto moedas. Adeus, complicação! Bem-vindo, facilidade!</p>
-                <button class="btn-link mt-4" onclick="openProjectPopup('e.a.s.y')">Saiba mais</button>
+                <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">VSTARS</h3>
+                    <p class="text-lg">Uma empresa simulada, criado em um treinamento que fiz de gestão empresarial,
+                        porem o projeto que quero mostrar aqui é uma aplicação de FOOD PAGE com tudo que um restaurante
+                        precisaria em seu proprio APP</p>
+                    <button class="btn-link mt-4" onclick="openProjectPopup('vstars')">Saiba mais</button>
+                </div>
+                <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">BAÚ DOS PIRATAS</h3>
+                    <p class="text-lg">Isso faz parte de um projeto pessoal, de modernizar aplicações antigas, e ver
+                        como elas ficaram hoje em dia, escolhe sempre as maiores aplicações da internet, e uma delas foi
+                        o ThePirateBay</p>
+                    <button class="btn-link mt-4" onclick="openProjectPopup('tpb2')">Saiba mais</button>
+                </div>
+                <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">LIMA STORE</h3>
+                    <p class="text-lg">Bom, é basicamente a minha loja pessoal, porem... ela tem um toque especial, alem
+                        de ser bem organizada, e ser feita por min (brincadeira) hehe, o especial dela é sua
+                        Inteligencia Artificial</p>
+                    <button class="btn-link mt-4" onclick="openProjectPopup('limastore')">Saiba mais</button>
+                </div>
+                <div class="p-4 bg-gray-800 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold mb-2">E.A.S.Y. (Effortless All-in-One Payment System)</h3>
+                    <p class="text-lg">Conheça o E.A.S.Y. - o Sistema de Pagamento Tudo-em-Um que é mais simples do que
+                        fazer pipoca no micro-ondas! Integre qualquer forma de pagamento com facilidade e rapidez seja
+                        ela de moedas normais ou stable/crypto moedas. Adeus, complicação! Bem-vindo, facilidade!</p>
+                    <button class="btn-link mt-4" onclick="openProjectPopup('e.a.s.y')">Saiba mais</button>
+                </div>
             </div>
         </div>
+    </section>
+    <!-- Popup de Projeto -->
+
+    <div id="project-popup"
+        class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center z-50">
+        <div class="bg-gray-800 p-6 rounded-lg max-w-lg w-full overflow-hidden">
+            <div class="overflow-auto">
+                <h2 id="project-title" class="text-2xl font-bold mb-4"></h2>
+                <p id="project-description" class="mb-4"></p>
+                <div id="project-carousel" class="carousel">
+
+                </div>
+            </div>
+            <button id="close-popup" class="btn-link mt-4" onclick="closeProjectPopup()">Fechar</button>
+        </div>
     </div>
-</section>
-<!-- Popup de Projeto -->
 
-<div id="project-popup" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center z-50">
-    <div class="bg-gray-800 p-6 rounded-lg max-w-lg w-full overflow-hidden">
-        <div class="overflow-auto">
-            <h2 id="project-title" class="text-2xl font-bold mb-4"></h2>
-            <p id="project-description" class="mb-4"></p>
-            <div id="project-carousel" class="carousel">
 
+    <!-- Social Media Section -->
+    <section id="social-media"
+        class="py-16 bg-gradient-to-r from-purple-600 to-blue-500 text-white fade-in shadow-card">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Conecte-se comigo</h2>
+            <div class="social-icons grid grid-cols-2 md:grid-cols-4 gap-8">
+                <a href="https://github.com/Henrique3h0"
+                    class="flex items-center justify-center flex-col hover-scale shadow-hover">
+                    <i class="fab fa-github text-4xl mb-2"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.instagram.com/000_kaua000/"
+                    class="flex items-center justify-center flex-col hover-scale shadow-hover">
+                    <i class="fab fa-instagram text-4xl mb-2"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="./" class="flex items-center justify-center flex-col hover-scale shadow-hover">
+                    <i class="fab fa-whatsapp text-4xl mb-2"></i>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="./" class="flex items-center justify-center flex-col hover-scale shadow-hover">
+                    <i class="fab fa-linkedin text-4xl mb-2"></i>
+                    <span>LinkeDin</span>
+                </a>
             </div>
         </div>
-        <button id="close-popup" class="btn-link mt-4" onclick="closeProjectPopup()">Fechar</button>
-    </div>
-</div>
-
-
-<!-- Social Media Section -->
-<section id="social-media" class="py-16 bg-gradient-to-r from-purple-600 to-blue-500 text-white fade-in shadow-card">
-    <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8">Conecte-se comigo</h2>
-        <div class="social-icons grid grid-cols-2 md:grid-cols-4 gap-8">
-            <a href="https://github.com/Henrique3h0" class="flex items-center justify-center flex-col hover-scale shadow-hover">
-                <i class="fab fa-github text-4xl mb-2"></i>
-                <span>GitHub</span>
-            </a>
-            <a href="https://www.instagram.com/000_kaua000/" class="flex items-center justify-center flex-col hover-scale shadow-hover">
-                <i class="fab fa-instagram text-4xl mb-2"></i>
-                <span>Instagram</span>
-            </a>
-            <a href="./" class="flex items-center justify-center flex-col hover-scale shadow-hover">
-                <i class="fab fa-whatsapp text-4xl mb-2"></i>
-                <span>WhatsApp</span>
-            </a>
-            <a href="./" class="flex items-center justify-center flex-col hover-scale shadow-hover">
-                <i class="fab fa-linkedin text-4xl mb-2"></i>
-                <span>LinkeDin</span>
-            </a>
-        </div>
-    </div>
-</section>
+    </section>
 
 
 
 
     <!-- GitHub Stats Section -->
-<section id="github-stats" class="py-16 fade-in shadow-card">
-    <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <a href="https://github.com/Henrique3h0">
-            <img class="mb-4 w-full" src="https://github-readme-stats.vercel.app/api?username=Henrique3h0&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&locale=pt-br" alt="GitHub Stats"/>
-        </a>
-        <a href="https://github.com/Henrique3h0">
-            <img class="mb-4 w-full" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Henrique3h0&layout=compact&langs_count=7&theme=dracula&locale=pt-br" alt="Top Languages"/>
-        </a>
-    </div>
-</section>
+    <section id="github-stats" class="py-16 fade-in shadow-card">
+        <div class="container mx-auto text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <a href="https://github.com/Henrique3h0">
+                <img class="mb-4 w-full"
+                    src="https://github-readme-stats.vercel.app/api?username=Henrique3h0&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&locale=pt-br"
+                    alt="GitHub Stats" />
+            </a>
+            <a href="https://github.com/Henrique3h0">
+                <img class="mb-4 w-full"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=Henrique3h0&layout=compact&langs_count=7&theme=dracula&locale=pt-br"
+                    alt="Top Languages" />
+            </a>
+        </div>
+    </section>
 
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-white text-center py-4 fade-in shadow-card">
         <p>&copy; 2024 LIMA. Todos os direitos reservados.</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
 
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
 
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var sections = document.querySelectorAll('.fade-in');
             var options = {
                 root: null,
@@ -373,8 +397,8 @@
                 threshold: 0.5
             };
 
-            var observer = new IntersectionObserver(function(entries, observer) {
-                entries.forEach(function(entry) {
+            var observer = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('active');
                         observer.unobserve(entry.target);
@@ -382,7 +406,7 @@
                 });
             }, options);
 
-            sections.forEach(function(section) {
+            sections.forEach(function (section) {
                 observer.observe(section);
             });
         });
@@ -428,9 +452,9 @@
                 var carouselContainer = document.getElementById('project-carousel');
                 carouselContainer.innerHTML = '';
                 var media = [
-                    { type: 'video', src: 'images/AutoDrawn/preview.webm' }
+                    { type: 'video', src: '/images/AutoDrawn/preview.webm' }
                 ];
-                media.forEach(function(item) {
+                media.forEach(function (item) {
                     if (item.type === 'image') {
                         var img = document.createElement('img');
                         img.src = item.src;
@@ -451,9 +475,9 @@
                 var carouselContainer = document.getElementById('project-carousel');
                 carouselContainer.innerHTML = '';
                 var media = [
-                    { type: 'image', src: 'images/noimage.jpeg' }
+                    { type: 'image', src: '/images/noimage.jpeg' }
                 ];
-                media.forEach(function(item) {
+                media.forEach(function (item) {
                     if (item.type === 'image') {
                         var img = document.createElement('img');
                         img.src = item.src;
@@ -474,15 +498,15 @@
                 var carouselContainer = document.getElementById('project-carousel');
                 carouselContainer.innerHTML = '';
                 var media = [
-                    { type: 'video', src: 'images/VSTARS/preview.mp4' },
-                    { type: 'image', src: 'images/VSTARS/1.png'},
-                    { type: 'image', src: 'images/VSTARS/2.png'},
-                    { type: 'image', src: 'images/VSTARS/3.png'},
-                    { type: 'image', src: 'images/VSTARS/4.png'},
-                    { type: 'image', src: 'images/VSTARS/5.png'},
-                    { type: 'image', src: 'images/VSTARS/6.png'}
+                    { type: 'video', src: '/images/VSTARS/preview.mp4' },
+                    { type: 'image', src: '/images/VSTARS/1.png' },
+                    { type: 'image', src: '/images/VSTARS/2.png' },
+                    { type: 'image', src: '/images/VSTARS/3.png' },
+                    { type: 'image', src: '/images/VSTARS/4.png' },
+                    { type: 'image', src: '/images/VSTARS/5.png' },
+                    { type: 'image', src: '/images/VSTARS/6.png' }
                 ];
-                media.forEach(function(item) {
+                media.forEach(function (item) {
                     if (item.type === 'image') {
                         var img = document.createElement('img');
                         img.src = item.src;
@@ -503,10 +527,10 @@
                 var carouselContainer = document.getElementById('project-carousel');
                 carouselContainer.innerHTML = '';
                 var media = [
-                    { type: 'video', src: 'images/ThePirateBay2/ThePirateBay2.mp4' },
-                    { type: 'image', src: 'images/ThePirateBay2/1.png'},
+                    { type: 'video', src: '/images/ThePirateBay2/ThePirateBay2.mp4' },
+                    { type: 'image', src: '/images/ThePirateBay2/1.png' },
                 ];
-                media.forEach(function(item) {
+                media.forEach(function (item) {
                     if (item.type === 'image') {
                         var img = document.createElement('img');
                         img.src = item.src;
@@ -522,14 +546,19 @@
 
             if (projectName === 'limastore') {
                 title = "LIMA STORE";
-                description = "Como um bom mamifero desprovido de sono, e com curiosas capacidades de converter cafeína em soluções de bugs (Programador), Prefiro evitar o maximo possivel de contato com os queridos usuarios (Irmãos entenderam o porquê), Criei o jorge. Jorge é um inteligencia artificial baseado na LARI (Gosto de falar que é o marido dela hehe), e sua unica função é receber uma descrição dada pelo cliente, e baseado nos parametros em que ele foi treinado, dar um relatorio e precificação que eu normalmente daria, assim todos cliente que quiser meus serviços personalizados, terão uma resposta instatânea em qualquer momento do dia, e em qualquer dia (Ainda bem que IA não tem direito trabalhista) ";
+                description = "Como um bom mamifero desprovido de sono, e com curiosas capacidades de converter cafeína em soluções de bugs (Programador), Prefiro evitar o maximo possivel de contato com os queridos usuarios (Irmãos entenderam o porquê), Criei o jorge. Jorge é um inteligencia artificial baseado na LARI, e sua unica função é receber uma descrição dada pelo cliente, e baseado nos parametros em que ele foi treinado, dar um relatorio e precificação que eu normalmente daria, assim todos cliente que quiser meus serviços personalizados, terão uma resposta instatânea em qualquer momento do dia, e em qualquer dia (Ainda bem que IA não tem direito trabalhista)";
                 // Adicionar conteúdo ao carrossel
                 var carouselContainer = document.getElementById('project-carousel');
                 carouselContainer.innerHTML = '';
                 var media = [
-                    { type: 'image', src: 'images/noimage.jpeg'}
+                    { type: 'image', src: '/images/limastore/1.png' },
+                    { type: 'image', src: '/images/limastore/2.png' },
+                    { type: 'image', src: '/images/limastore/3.png' },
+                    { type: 'image', src: '/images/limastore/4.png' },
+                    { type: 'image', src: '/images/limastore/5.png' },
+                    { type: 'image', src: '/images/limastore/6.png' }
                 ];
-                media.forEach(function(item) {
+                media.forEach(function (item) {
                     if (item.type === 'image') {
                         var img = document.createElement('img');
                         img.src = item.src;
@@ -545,16 +574,19 @@
 
             if (projectName === 'e.a.s.y') {
                 title = "E.A.S.Y. (Effortless All-in-One Payment System)";
-                description = "AInda não tem imagens e videos desse projeto mas em breve vou adiciona-los, mas basicamente, é um sistema/painel que por ele, você pode aceitar diversas formas de pagamento, seja ela Centralizada com moedas normais, ou Descentralizadas como crypto e stable coins, mesmo sem sabe programar e dispensando maquininhas";
+                description = "é um sistema/painel que por ele, você pode aceitar diversas formas de pagamento, seja ela Centralizada com moedas normais, ou Descentralizadas como crypto e stable coins, mesmo sem sabe programar e dispensando maquininhas";
                 // Adicionar conteúdo ao carrossel
                 var carouselContainer = document.getElementById('project-carousel');
                 carouselContainer.innerHTML = '';
 
                 var media = [
-                    { type: 'image', src: 'images/noimage.jpeg'}
+                    { type: 'image', src: '/images/e.a.s.y/1.png' },
+                    { type: 'image', src: '/images/e.a.s.y/2.png' },
+                    { type: 'image', src: '/images/e.a.s.y/3.png' },
+                    { type: 'image', src: '/images/e.a.s.y/4.png' }
                 ];
 
-                media.forEach(function(item) {
+                media.forEach(function (item) {
                     if (item.type === 'image') {
                         var img = document.createElement('img');
                         img.src = item.src;
@@ -577,6 +609,7 @@
                 nextArrow: '<button class="slick-next" aria-label="Próxima Imagem" title="Próxima Imagem">➡️PROXIMO➡️</button>',
                 prevArrow: '<button class="slick-prev" aria-label="Imagem anterior" title="Imagem anterior">⬅️ANTERIOR⬅️</button>',
                 adaptiveHeight: true,
+                autoPlay: true
 
             });
 
@@ -591,8 +624,8 @@
             document.getElementById('project-popup').classList.add('hidden');
         }
 
-        $(document).ready(function() {
-            $('a[href^="#"]').on('click', function(event) {
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (event) {
                 event.preventDefault();
 
                 var targetId = $(this).attr('href');
@@ -602,6 +635,29 @@
                 $('html, body').animate({
                     scrollTop: targetOffsetTop
                 }, duration);
+            });
+        });
+
+        $(document).ready(function(){
+            $(document).on('click', '.slick-slide', function(){
+                var imagem = $(this);
+                if (!imagem.hasClass('zoomed')) {
+                    var rect = imagem[0].getBoundingClientRect();
+                    var mouseX = event.clientX - rect.left;
+                    var mouseY = event.clientY - rect.top;
+
+                    var percentX = mouseX / rect.width * 100;
+                    var percentY = mouseY / rect.height * 100;
+
+                    imagem.css({
+                        'transform-origin': percentX + '% ' + percentY + '%',
+                        'transform': 'scale(3)'
+                    }).addClass('zoomed');
+                } else {
+                    imagem.css({
+                        'transform': 'scale(1)'
+                    }).removeClass('zoomed');
+                }
             });
         });
     </script>
